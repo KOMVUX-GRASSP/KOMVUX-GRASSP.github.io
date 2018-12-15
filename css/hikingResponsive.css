@@ -1,0 +1,32 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    #headTitle h1 {font-size:3rem!important;}
+    .tagline {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 70px;
+        padding: 0;
+    }
+    a#mainNav{font-size: 20px; }
+    #back {font-size: .75rem}
+    #wiFiMap, #cyclePumpMap, #hikingMap {
+        margin-top: 0px;
+        margin-left: 20px!important; 
+    }     
+    #ToiletButton{top:11rem;}
+    #FoodButton{top:14rem;}
+    #TrailButton{top:17rem;}
+    #ParkingButton{top:20rem;}
+    #ActivityButton{top:23rem;}
+   .carousel-inner img {
+        width: 100%;
+        height: 100%; /*100%*/
+    }
+    .card {
+        width: 100%;
+        height:100%;
+    }   
+    #hbgHead {
+        font-size: 35px!important;
+    }
+    }
+

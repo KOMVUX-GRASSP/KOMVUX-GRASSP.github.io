@@ -189,6 +189,7 @@ body {
 #homeDiv{
     height: 180px;
     width: 100%;
+    margin-top: -120px;
 }
 #homeDiv>div {
   background-color: black;
@@ -198,6 +199,7 @@ body {
   height: 180px;
   box-sizing: border-box;
   padding: none;
+ 
 }
 #homeDiv>div::after {
   content: '';
@@ -459,63 +461,59 @@ width: 0%;
   .back_btn:hover {
     background-color: RoyalBlue;
   }
-/* Style the links inside the sidenav */
+/* styling left nav module control bar */ 
 #mySidenav {
     height: 100%; /* 100% Full-height */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  top: 0; /* Stay at the top */
-  left: 0;
-  margin-right: 20%;
- }
- /* Style the links inside the sidenav */
- #mySidenav a {
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    top: 0; /* Stay at the top */
+    left: 0;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
     position: fixed; /* Position them relative to the browser window */
-    left: -13rem; /* Position them outside of the screen */
+    left: -11rem; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 0.7rem 1rem; /* 15px padding */
-    width:17rem;
+    width:15rem;
     text-decoration: none; /* Remove underline */
     font-size: 2vw;/*2.5rem; /* Increase font size */
     text-align: right;
     color: white; /* White text color */
     border-radius: 0 0.5rem 0.5rem 0; /* Rounded corners on the top right and bottom right side */
- }
- #mySidenav a:hover {
+}
+#mySidenav a:hover {
     left: 0; /* On mouse-over, make the elements appear as they should */
- }
- 
- /* The about link: 20px from the top with a green background */
- #about {
-    top:8rem !important ;
+}
 
-    background-color: #1e272e !important ;
- }
- #activityButton {
-   top:35.5rem !important ;
-   background-color: #4bcffa !important ; /* Activities- Amanpreet */
- }
- #toiletButton {
-    top:13.5rem !important ;
-    background-color:#3c40c6 !important ; /* Toilets- Pratibha */
- }
- #trailButton {
-    top:24.5rem !important ;
-    background-color: #0be881 !important ; /* Trails- Garima */
- }
- #foodButton {
-    top: 19rem !important ;
-    background-color: #f159f1!important; /* Food - Shweta */
- }
- #parkingButton {
-    top: 30rem!important  ;
-    background-color: #ffd32a!important; /* Parking - Subarna */
- }
-
-
+/* All the module links displayed on left side of screen: starting with home from the top */
+#about {
+    top:20% !important ;
+    background-color: #ff5e57;/* Home Button */
+}
+#ActivityButton {   
+   top:70% !important ;
+   background-color: #4bcffa; /* Activities- Amanpreet */
+}
+#ToiletButton {
+    top:40% !important ;
+    background-color:#3c40c6;/* Toilets- Pratibha */
+}
+#TrailsButton {
+    top:50% !important ;
+    background-color: #0be881 /* Trails- Garima */
+}
+#FoodButton {
+    top: 60% !important ;
+    background-color: #f159f1 /* Food - Shweta */
+}
+#ParkingButton {
+    top: 30%!important  ;
+    background-color: #ffd32a; /* Parking - Subarna */
+}
 /* Use a media query to add a breakpoint at 360px: */
 @media screen and (max-width: 360px){
     .kortNavbar .img-responsive{
@@ -599,8 +597,6 @@ font-size: 6vh!important;
     top: 12px!important;
 }
 }
-
-
 
 
 

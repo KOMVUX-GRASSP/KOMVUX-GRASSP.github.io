@@ -18,15 +18,7 @@
 </head>
 
 <body class="cafe-background">
-    <div id="mySidenav">
-        <a href="index.html" id="about">Home <i class="fas fa-home"></i></a>
-        <a href="#" id="parkingButton">Parking <i class="fas fa-parking"></i></a>
-        <a href="#" id="foodButton">Food <i class="fas fa-utensils"></i></a>
-        <a href="#" id="toiletButton">Toilets <i class="fas fa-male"></i><i class="fas fa-female"></i></a>
-        <a href="#" id="trailButton">Trails <i class="fas fa-walking"></i></a>
-        <a href="#" id="activityButton">Activity <i class="fas fa-futbol"></i></a>
-    </div>
-
+   
     <div class="container-fluid top_nav">
         <div class="row">
             <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -35,6 +27,14 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="mySidenav">
+        <a href="/index.html" id="about">Home <i class="fas fa-home"></i></a>
+        <a href="/parking.html" id="ParkingButton">Parking <i class="fas fa-parking"></i></a>
+        <a href="/cafe.html" id="FoodButton">Food <i class="fas fa-utensils"></i></a>
+        <a href="/toilets.html" id="ToiletButton">Toilets <i class="fas fa-male"></i><i class="fas fa-female"></i></a>
+        <a href="/activities.html" id="ActivityButton">Activity <i class="fas fa-futbol"></i></a>
+        <a href="/trails.html" id="TrailsButton">Trails <i class="fas fa-walking"></i></a>            
     </div>
 
     <div class="container-fluid parallax">
@@ -62,11 +62,11 @@
 
     <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
-    <script src="app.js"></script>
-    <script src="controllers/controllers.js"></script>
-    <script src="services/services.js"></script>
+    <script src="app-cafe.js"></script>
+    <script src="controllers/cafe-contoller.js"></script>
+    <script src="services/cafe-services.js"></script>
     <footer class="footer_top">
-        <h5>&copy 2018 GRASSP || Powered by <img src="img/logoHBG_1.png" style="width:10rem"></h5>
+        <h5>&copy 2018 GRASSP || Powered by <img src="/img/logoHBG_1.png" style="width:10rem"></h5>
     </footer>
 </body>
 

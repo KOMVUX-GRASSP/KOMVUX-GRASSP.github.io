@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="GRASSPApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Data</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Activitystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <nav class="main-header navbar d-flex justify-content-center">
+                        <div class="nav-brand">
+                            <h1 class="app-tagline"> HemmaHbg - ACTIVITIES</h1>
+                            <!--  <h6>“Borta är bra, men Helsingborg är bäst!“</h6>-->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="mySidenav">
+        <a href="/index.html" id="about">Home <i class="fas fa-home"></i></a>
+        <a href="/parking.html" id="ParkingButton">Parking <i class="fas fa-parking"></i></a>
+        <a href="/cafe.html" id="FoodButton">Food <i class="fas fa-utensils"></i></a>
+        <a href="/toilets.html" id="ToiletButton">Toilets <i class="fas fa-male"></i><i class="fas fa-female"></i></a>
+        <a href="/activities.html" id="ActivityButton">Activity <i class="fas fa-futbol"></i></a>
+        <a href="/trails.html" id="TrailsButton">Trails <i class="fas fa-walking"></i></a>            
+    </div>
+    <div ng-view></div>
+    <footer id="activityfooter">
+        <h5>&copy 2018 GRASSP || Powered by <img src="img/logoHBG_1.png" style="width:10rem"></h5>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="Activityapp.js"></script>
+    <script src="controllers/Activitycontroller.js"></script>
+</body>
+
+</html>

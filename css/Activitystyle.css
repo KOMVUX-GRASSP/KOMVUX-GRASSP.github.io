@@ -1,0 +1,164 @@
+body{
+    background-image: url("/img/sports1.jpg");
+    width:100%;
+    height:100%;
+    background-size: cover;      
+    background-repeat: no-repeat;
+}
+
+*{
+    font-family:  'Quattrocento Sans', sans-serif;
+}
+.head{
+    height:30px;
+    background-color: black;
+    width:100%;
+    display:flex;    
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    text-align:center;   
+    color:#FFF;    
+}
+.length_box{
+    color:black;
+    margin-top:5px;
+    font-size:1.25rem;
+    padding-top:5px;
+    margin-bottom:0;
+}
+
+.my_form{
+    margin-top:50px;
+}
+/* styling left nav module control bar */ 
+#mySidenav {
+   height: 100%; /* 100% Full-height */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+   top: 0; /* Stay at the top */
+   left: 0;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+   position: fixed; /* Position them relative to the browser window */
+   left: -11rem; /* Position them outside of the screen */
+   transition: 0.3s; /* Add transition on hover */
+   padding: 0.7rem 1rem; /* 15px padding */
+   width:15rem;
+   text-decoration: none; /* Remove underline */
+   font-size: 2vw;/*2.5rem; /* Increase font size */
+   text-align: right;
+   color: white; /* White text color */
+   border-radius: 0 0.5rem 0.5rem 0; /* Rounded corners on the top right and bottom right side */
+}
+#mySidenav a:hover {
+   left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* All the module links displayed on left side of screen: starting with home from the top */
+#about {
+   top:20% !important ;
+   background-color: #ff5e57;/* Home Button */
+}
+#ActivityButton {   
+  top:70% !important ;
+  background-color: #4bcffa; /* Activities- Amanpreet */
+}
+#ToiletButton {
+   top:40% !important ;
+   background-color:#3c40c6;/* Toilets- Pratibha */
+}
+#TrailsButton {
+   top:50% !important ;
+   background-color: #0be881 /* Trails- Garima */
+}
+#FoodButton {
+   top: 60% !important ;
+   background-color: #f159f1 /* Food - Shweta */
+}
+#ParkingButton {
+   top: 30%!important  ;
+   background-color: #ffd32a; /* Parking - Subarna */
+}
+ .display_result{
+     border:solid #FFF;
+     color:#FFF;
+     max-width: 800px;
+     margin: 0 auto;
+     margin-top: 5px;
+ }
+ .length_box{
+    max-width: 800px;
+    margin: 0 auto;
+ }
+ .mapbox{
+     max-width: 1400px;
+     margin:0 auto;
+     /* border:1px solid; */
+ }
+ .tagline-container {   
+     height:50vh;
+     background-attachment: fixed;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .tagline {
+     padding:2rem 10rem;
+     border-radius: 2rem;
+     background-color: rgba(0,0,0,0.8);
+     text-align: center;
+  }
+ .tagline h2{
+     color:#FFF;
+ }
+ #headTitle h1{
+    font-family: 'Faster One', cursive;
+    color: #FFF;
+    font-size: 6rem!important;
+ }
+
+.parallax{
+  
+   height:50vh;
+   background-attachment: fixed;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    float: none!important;
+    }
+   
+    .navbar-brand h1 {
+    font-size: 4vw!important;
+    }
+    .main-header h1 {
+        font-family: 'Berkshire Swash', cursive;
+        color:#FFF!important;
+        text-shadow: 3px 2px black;      
+        font-size: 3.5vw!important;
+        text-align: center;
+        margin-bottom:30px;
+     }
+     #back {
+         color:#FFF;
+         background-color:#4bcffa;
+         font-size:1vw;
+      }
+      #activityfooter {
+          position: fixed;
+          bottom:0;
+          width:100%;
+          text-align: center;
+          background-color: rgb(0, 0, 0,0.5);
+          color:white;
+          font-size:2vw;
+       }
+     

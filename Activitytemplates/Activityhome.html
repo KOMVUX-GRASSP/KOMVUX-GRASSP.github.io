@@ -1,0 +1,44 @@
+
+    <!-- <section id="home" class="container-fluid" style="padding:2rem; margin: 0; background-color: rgb(0,0,0,0.6);"> -->
+    <section class="parking-section">
+            <article class="tagline-container">
+        <div class="tagline">
+            <h2>Select Activity</h2>
+            <form class="my_form">
+                <!-- <div class="form-row"> -->
+                    <!-- <div class="form-group col-md-4"> -->
+                        <select ng-model="categori" >
+                            <option value="Fotbollsplaner">Football</option>
+                            <option value="Friidrott">Athletics</option>
+                            <option value="Fritidsgårdar">Parks</option>
+                            <option value="Idrottsanläggningar">Sports Facillities</option>
+                            <option value="Ishallar">Ice Halls</option>
+                            <option value="Sporthallar">Sport Halls</option>
+                            <option value="Ridanläggningar">Riding</option>
+                            <option value="Badanläggningar">Swimming</option>
+                            <option value="Övrigt">Others</option>
+                        </select>
+                    <!-- </div> -->
+                    <!-- <div class="form-group col-md-4"> -->
+                        <button type="submit" class="btn btn-primary btn-lg my_button" ng-click="show()">Explore</button>
+                    <!-- </div> -->
+                <!-- </div> -->
+            </form>
+        </div>
+        </article>
+        <section>
+            </section>
+                <div class="controller length_box" ng-model="length" ng-show="searchComplete">
+                    <h2>Total Places:{{length}}</h2>
+                </div>
+        
+                <div class="container display_result" style="background-color: rgb(0,0,0,0.6);" ng-repeat="x in result" ng-show="searchComplete">
+                    <br>
+                    <h1>Activity Place:</h1>
+                    <h3>{{x.place}}</h3><br><br>
+                    <h1>Find Here:</h1>
+                    <h3>{{x.address}},Helsingborg</h3><br>
+                    <p><button type="submit" class="btn btn-primary my_button" ng-click=display_map(x.place,x.coordinates)>View On Map</button></p>
+                </div>
+                
+            </section>

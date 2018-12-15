@@ -1,0 +1,204 @@
+#displayToilet{
+width: 80%;
+margin: 0 auto;
+}
+.parking-section {
+    padding:2rem;
+    margin:0;
+    background-color: rgb(0, 0, 0,0.4);
+    
+}
+#displayToilet th{
+    background-color: #000;
+}
+#displayToilet {
+    color: #fff;
+}
+/* styling left nav module control bar */ 
+#mySidenav {
+    height: 100%; /* 100% Full-height */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    top: 0; /* Stay at the top */
+    left: 0;
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -11rem; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 0.7rem 1rem; /* 15px padding */
+    width:15rem;
+    text-decoration: none; /* Remove underline */
+    font-size: 2vw;/*2.5rem; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 0.5rem 0.5rem 0; /* Rounded corners on the top right and bottom right side */
+}
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* All the module links displayed on left side of screen: starting with home from the top */
+#about {
+    top:20% !important ;
+    background-color: #ff5e57;/* Home Button */
+}
+#ActivityButton {   
+   top:70% !important ;
+   background-color: #4bcffa; /* Activities- Amanpreet */
+}
+#ToiletButton {
+    top:40% !important ;
+    background-color:#3c40c6;/* Toilets- Pratibha */
+}
+#TrailsButton {
+    top:50% !important ;
+    background-color: #0be881 /* Trails- Garima */
+}
+#FoodButton {
+    top: 60% !important ;
+    background-color: #f159f1 /* Food - Shweta */
+}
+#ParkingButton {
+    top: 30%!important  ;
+    background-color: #ffd32a; /* Parking - Subarna */
+}
+        #displayToilet table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            background-color: black;
+            opacity: 0.7;
+            color: #fff;
+        }
+        #displayToilet th {
+            color: #0289f4;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        #displayToilet td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 20px;
+        }
+        #displayToilet tr:nth-child(even) {
+            background-color: #746868;
+        }
+        .capitalise {
+            text-transform: capitalize;
+        }
+        #toilets{
+      font-size:3rem;
+      color:#0289f4;
+        }
+        #toilets h3 {
+      font-size:2.5rem;
+      color:#fff;
+   }
+   #homeToilet{
+       width: 100%;
+   }
+   .main-header h1{
+   font-family: 'Berkshire Swash', cursive;
+   color:black!important;
+   text-shadow: 2px 1px #0289f4;
+   font-size: 3.5vw!important;
+   text-align: center;
+}
+.main-header h6{
+   font-family: Jacques Francois Shadow, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+   color: #0289f4!important;
+   text-shadow: 2px 2px black;
+   text-align: center;
+   font-size: 2vw!important;
+}
+        body {
+            background-attachment: fixed;
+            background-image: url('/img/Plaza-Loo.jpg');
+            font-family: "Roboto", sans-serif;
+            background-repeat: no-repeat;
+      background-size:cover;
+        }
+        h1 {
+            color: #0289f4;
+        }
+        /* styling inner module (ex Parking) search page */
+.tagline-container {
+  /*background-image: url('images/parking_2.jpg');*/
+ /*background-repeat: no-repeat;*/
+ /*background-size:cover;*/
+   height:65vh;
+   background-attachment: fixed;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.tagline {
+   padding:2rem 10rem;
+   border-radius: 2rem;
+   background-color: rgba(0,0,0,0.8);
+   text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.list {
+  flex: 0 0 320px;
+  list-style: none;
+}
+.list__item {
+  position: relative;
+}
+.list__item:hover > .label {
+  color: #0289f4;
+}
+.list__item:hover > .label::before {
+  border: 8px solid #0289f4;
+  margin-right: 12px;
+}
+.radio-btn {
+  position: absolute;
+  opacity: 0;
+visibility: hidden;
+width: 25px;
+height: 25px;
+}
+.radio-btn:checked + .label {
+  color: #0289f4;
+}
+.radio-btn:checked + .label::before {
+  margin-right: 32px;
+  border: 8px solid #0289f4;
+  background: #fff;
+}
+.label {
+  display: flex;
+  align-items: center;
+  padding:12px 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.label::before {
+  display: inline-block;
+  content: "";
+  height:35px;
+  width: 35px;
+  margin-right: 10px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  transition: all 0.25s linear;
+}
