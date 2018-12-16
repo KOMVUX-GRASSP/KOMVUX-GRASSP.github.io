@@ -1,24 +1,57 @@
- 
+   
 var app = angular.module("GRASSPApp",['ngRoute','firebase']);
-// HOME 
+var cafeHelsingborg = angular.module("cafeApp",['ngRoute']);
+
+app.run(function($rootScope) {
+    $rootScope.userNameHome = '';
+ });
+ 
 app.config(function($routeProvider){
     $routeProvider
     .when('/',{
-        templatesUrl:'templates/homess.html',
+        templateUrl:'templates/homess.html',
         controller:'FirstController',  
     })
     .when('/sign-up',{
-        templatesUrl:'templates/sign-up.html',
+        templateUrl:'templates/sign-up.html',
         controller:'SignUpController'
     })
     .when('/login',{
-        templatesUrl:'templates/login.html',
+        templateUrl:'templates/login.html',
         controller:'LogInController'
     }) 
 });
-// CAFE
+
+cafeHelsingborg.config(function($routeProvider){
+    $routeProvider
+    .when('/cafe',{
+        templateUrl:'/cafe.html',
+        controller:'cafeSearchCtrl'
+    }) 
+    .when('/cafes',{
+        templateUrl:'templates/cafes.html',
+        controller:'cafeServiceCtrl'
+    })
+    .when('/cafe-map/:coordinate_noBracket', {
+        templateUrl: 'templates/cafeSearch-map.html',
+        controller: 'cafeSearchMapCtrl'
+    }) 
+    .when('/restaurants_select', {
+        templateUrl: 'templates/restaurants_select.html',
+        controller: 'restaurantServiceCtrl'
+    }) 
+    .when('/restaurant-map/:coordinate_noBracket', {
+        templateUrl:'templates/restaurant_search_map.html',
+        controller: 'restaurantMapCtrl'
+    });
+});
 
 
 
-// PARKING
+
+
+
+
+
+
 

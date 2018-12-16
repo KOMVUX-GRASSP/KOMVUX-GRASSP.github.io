@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='GRASSPApp'>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet'>
     <!--Googlefont-->
-</head>h
+</head>
+
 <body class="main-background">
     <div class="container-fluid">
         <div class="row">
@@ -30,7 +32,7 @@
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <!--Calling open weather api for current weather display-->
                 <div ng-controller='getWeatherCtrl' class="kortNavbar">
-                    <img src="img/weather_icon.jpg" alt="image" class="img-responsive">
+                    <img src="img/weather_icon.png" alt="image" class="img-responsive">
                     <article class="weather_temp ">{{weatherResult+'&deg;C'}}</article>
                     <article class="weather_description ">{{weatherResult_description}}</article>
                 </div>
@@ -44,9 +46,7 @@
                 <div>
                     <!--integrating Auth Ctrl for cusing angular firebase for-->
                     <ul id="sidenav-index" class="sidenav" ng-controller='AuthCtrl'>
-                        <li>
-                            <a href="#!/" class="nav-link" id="index-home">home</a>
-                        </li>
+                            <a href="#!/" class="nothing" ></a>
                         <!--Adding sign-up functionality by angular firebase-->
                         <li ng-if="!user"><a href="#!/sign-up" class="nav-link" id="index-signup"><span class="glyphicon glyphicon-user "></span>
                                 Sign Up</a></li>
@@ -64,25 +64,25 @@
             </div>
             <!--Linking all other group members projects by bottom navbar button functionality-->
             <div id="homeDiv">
-                <div class="full_buttons">
-                    <label class="simulator_button" data-toggle="tooltip" title="Find Parking">
-                        <a href="parking.html"><i class="text fas fa-parking"></i></a>
-                    </label>
-                    <label class="simulator_button" data-toggle="tooltip" title="Find Toilets">
-                        <a href="toilets.html"> <span class="text fas fa-male fas fa-female"><i class="fas fa-female"></i></span></a>
-                    </label>
-                    <label class="simulator_button" data-toggle="tooltip" title="Find Events in Helsingborg">
-                        <a href="activities.html"><span class="text fas fa-futbol"></span></a>
-                    </label>
-                    <label class="simulator_button" data-toggle="tooltip" title="Find Trails/activities">
-                        <a href="trails.html"> <span class="text fas fa-walking"></span></a>
-                    </label>
-                    <label class="simulator_button" data-toggle="tooltip" title="Find Restaurants">
-                        <a href="cafe.html"><span class="text fas fa-utensils"></span></a>
+               <div class="full_buttons">
+                   <label class="simulator_button" data-toggle="tooltip" title="Find Parking">
+                       <a href="parking.html"><i class="text fas fa-car-alt"></i></a>
+                   </label>
+                   <label class="simulator_button" data-toggle="tooltip" title="Find Toilets">
+                       <a href="toilets.html"> <span class="text fas fa-male fas fa-female"><i class="fas fa-female"></i></span></a>
+                   </label>
+                   <label class="simulator_button" data-toggle="tooltip" title="Find Events in Helsingborg">
+                       <a href="activities.html"><span class="text fas fa-futbol"></span></a>
+                   </label>
+                   <label class="simulator_button" data-toggle="tooltip" title="Find Trails/activities">
+                       <a href="trails.html"> <span class="text fas fa-walking"></span></a>
+                   </label>
+                   <label class="simulator_button" data-toggle="tooltip" title="Find Restaurants">
+                       <a href="cafe.html"><span class="text fas fa-utensils"></span></a>
 
-                    </label>
-                    </div>
-            </div>
+                   </label>
+                   </div>
+           </div>
 
             <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
             <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
@@ -107,7 +107,7 @@
             </script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="app.js"></script>
-            <script src="controllers/controllers.js"></script>
+            <script src="controllers/cafe-controller.js"></script>
             <script src="services/services.js"></script>
 
 </body>

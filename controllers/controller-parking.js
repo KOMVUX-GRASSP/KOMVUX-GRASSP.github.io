@@ -37,7 +37,7 @@ app.controller('ParkingGeoMapCtrl', ['$scope', '$location', 'displayGeoParking',
             container: 'geo-map', // container id
             style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
             center: destination, // [lng, lat] of current position in array
-            zoom: 13 // starting zoom
+            zoom: 15 // starting zoom
         });
         // Add zoom and rotation controls to the map.
         map.addControl(new mapboxgl.NavigationControl());

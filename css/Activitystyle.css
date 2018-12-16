@@ -21,11 +21,12 @@ body{
     color:#FFF;    
 }
 .length_box{
-    color:black;
-    margin-top:5px;
-    font-size:1.25rem;
-    padding-top:5px;
-    margin-bottom:0;
+   color: #FFF;
+   font-size:1.25rem;
+   padding-top:5px;
+   background-color: #4bcffa;
+   max-width: 800px;
+   margin: 0 auto;
 }
 
 .my_form{
@@ -84,13 +85,17 @@ body{
    top: 30%!important  ;
    background-color: #ffd32a; /* Parking - Subarna */
 }
- .display_result{
-     border:solid #FFF;
-     color:#FFF;
-     max-width: 800px;
-     margin: 0 auto;
-     margin-top: 5px;
- }
+.display_result{
+   border:solid #FFF;
+   color:#FFF;
+   max-width: 800px;
+   margin-bottom: 20px;
+}
+.my_select{
+   width:15rem;
+   height:2.5rem;
+   margin-right: 1.5rem;
+}
  .length_box{
     max-width: 800px;
     margin: 0 auto;

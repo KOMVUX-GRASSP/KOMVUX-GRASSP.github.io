@@ -1,0 +1,30 @@
+<section class="container-fluid" id="hikingHome" style="padding:2rem; margin: 0; background-color: rgb(0,0,0,0.6);">
+   
+    <button class="btn btn-sm" id="back" ng-value="full" ng-click="hikingMap(full)">Hiking Map</a></button>
+    <div class="row">
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:1:0">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10:2">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10:12">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10:22">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10:33">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10:44">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10:54">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+        <div class="col-sm-3" ng-repeat="place in places | limitTo:10">
+            <a ng-href="" ng-click="map(place.fields.lednamn,place.geometry.coordinates)" id="hikingList">{{place.fields.lednamn}}&nbsp;</a>
+        </div>
+    </div>
+</section>

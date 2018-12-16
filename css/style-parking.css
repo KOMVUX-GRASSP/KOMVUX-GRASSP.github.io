@@ -75,20 +75,22 @@ footer {
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     top: 0; /* Stay at the top */
     left: 0;
-}
-/* Style the links inside the sidenav */
-#mySidenav a {
+ }
+ /* Style the links inside the sidenav */
+ #mySidenav a {
     position: fixed; /* Position them relative to the browser window */
-    left: -11rem; /* Position them outside of the screen */
+    left: -20rem; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 0.7rem 1rem; /* 15px padding */
-    width:15rem;
+    width:20rem;
     text-decoration: none; /* Remove underline */
     font-size: 2vw;/*2.5rem; /* Increase font size */
     text-align: right;
     color: white; /* White text color */
     border-radius: 0 0.5rem 0.5rem 0; /* Rounded corners on the top right and bottom right side */
-}
+    margin: 50px;
+   
+ }
 #mySidenav a:hover {
     left: 0; /* On mouse-over, make the elements appear as they should */
 }
@@ -220,14 +222,14 @@ footer {
     background-size: cover;*/
 }
 #marker {
-    background-image:url("images/IconParking.png");
+    background-image:url("/img/IconParking.png");
     background-size: cover;
     width:4rem;
     height:4rem;
     padding: 0;
 }
 #user-marker {
-    background-image:url("images/IconMan.png");
+    background-image:url("/img/IconMan.png");
     background-size: cover;
     width:5rem;
     height:5rem;
