@@ -65,12 +65,8 @@ app.controller("activitymapCtrl", ["$scope",'$routeParams','$sce', function ($sc
 
     var place1 = $routeParams.place1;
     var cors =$routeParams.cors;
-    
-   console.log(cors);
-    $scope.url=$sce.trustAsResourceUrl('https://helsingborg.opendatasoft.com/explore/embed/dataset/anlaggningar0/map/?disjunctive.kategori&rows=97&refine.objektnamn='+place1+'%20IP&location=11,'+cors+'&basemap=jawg.streets&static=false&datasetcard=false&scrollWheelZoom=false"');
-    console.log($scope.url);
-
-}]);
+     $scope.url=$sce.trustAsResourceUrl('https://helsingborg.opendatasoft.com/explore/embed/dataset/anlaggningar0/map/?disjunctive.kategori&rows=97&refine.objektnamn='+place1+'%20IP&location=11,'+cors+'&basemap=jawg.streets&static=false&datasetcard=false&scrollWheelZoom=false"');
+ }]);
 
 
 
