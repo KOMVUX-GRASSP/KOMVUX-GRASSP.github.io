@@ -28,7 +28,11 @@ body{
    max-width: 800px;
    margin: 0 auto;
 }
-
+.my_button{
+   background-color:  #4bcffa;
+   border:none;
+   font-size:1.5rem;
+}
 .my_form{
     margin-top:50px;
 }
