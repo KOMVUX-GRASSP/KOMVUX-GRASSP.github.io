@@ -1,6 +1,9 @@
  
 var app = angular.module("GRASSPApp",['ngRoute','firebase']);
 // HOME 
+app.run(function($rootScope) {
+    $rootScope.userNameHome = '';
+});
 app.config(function($routeProvider){
     $routeProvider
     .when('/',{

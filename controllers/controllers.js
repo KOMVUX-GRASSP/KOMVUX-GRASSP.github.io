@@ -78,6 +78,7 @@ app.controller('AuthCtrl', ['$scope', '$location', '$firebaseAuth','facebookServ
             var token = result.credential.accessToken;
             // The signed-in user info.
             var user = result.user;
+            $scope.userNameHome =user.displayName;
             console.log(user);
             // locatino chanage or something to do wit your app....
         })
@@ -97,6 +98,9 @@ app.controller('AuthCtrl', ['$scope', '$location', '$firebaseAuth','facebookServ
             var token = result.credential.accessToken;
             // The signed-in user info.
             var user = result.user;
+            console.log(user.displayName);
+            $scope.userNameHome =user.displayName;
+          
             // locatino chanage or something to do wit your app....
         })
         .catch(function (err) {
@@ -115,15 +119,4 @@ app.controller('getWeatherCtrl', ['$scope', 'weatherService', function ($scope, 
             /*$scope.weatherResult_icon = result.data.weather[0].icon;*/
         });
 }]);
-//search result menu 
 
-/* geo location
-var myApp = angular.module('myApp', ['geolocation']);
-myApp.controller('mainCtrl',[' $scope','$geolocation',function ($scope, $geolocation) {
-    $scope.coords = $geolocation.getLocation()
-        .then(function (data) {
-            return { lat: data.coords.latitude, 
-                     long: data.coords.longitude };
-        });
-}]);
-/* ends here */
