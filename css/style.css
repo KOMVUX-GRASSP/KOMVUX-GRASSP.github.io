@@ -43,7 +43,7 @@
     display: inline;
     position: absolute;
     left: 26%;
-    top: 200%; 
+    top: 180%; 
 }
 .weather_description {
     /* weather report display */
@@ -52,7 +52,7 @@
     display: inline;
     position: absolute;
     left: 26%;
-    top: 380%;
+    top: 270%;
   }
 .kortNavbar .img-responsive{
     /* Centered text */
@@ -480,7 +480,7 @@ width: 0%;
     z-index: 1; /* Stay on top */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
     top: 0; /* Stay at the top */
     left: 0;
  }
@@ -488,7 +488,7 @@ width: 0%;
  #mySidenav a {
     position: fixed; /* Position them relative to the browser window */
     left: -20rem; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
+    transition: 1s; /* Add transition on hover */
     padding: 0.7rem 1rem; /* 15px padding */
     width:20rem;
     text-decoration: none; /* Remove underline */
