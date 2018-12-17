@@ -35,10 +35,10 @@
                 <div class="container display_result" style="background-color: rgb(0,0,0,0.6);" ng-repeat="x in result" ng-show="searchComplete">
                     <br>
                     <h1>Activity Place:</h1>
-                    <h3>{{x.place}}</h3><br><br>
+                    <h3><b>{{x.place}}</b></h3><br><br>
                     <h1>Find Here:</h1>
-                    <h3>{{x.address}},Helsingborg</h3><br>
+                    <h3><b>{{x.address}}</b>,Helsingborg</h3><br>
                     <p><button type="submit" class="btn btn-primary my_button" ng-click=display_map(x.place,x.coordinates)>View On Map</button></p>
                 </div>
-                
+<br><br><br>
             </section>

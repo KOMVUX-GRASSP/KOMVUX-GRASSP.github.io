@@ -100,10 +100,7 @@ body{
    height:2.5rem;
    margin-right: 1.5rem;
 }
- .length_box{
-    max-width: 800px;
-    margin: 0 auto;
- }
+ 
  .mapbox{
      max-width: 1400px;
      margin:0 auto;
