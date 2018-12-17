@@ -5,16 +5,25 @@ app.controller("ToaletterCtrl", function ($scope, $http) {
     var toiletList=[];
     $scope.disToilets = function(a){
        // write code to filter nearest toilets based on geo location
+       var checkbox = element(by.model('checked'));
+       var checkElem = element(by.css('.check-element'));
+     
+       expect(checkElem.isDisplayed()).toBe(false);
+       checkbox.click();
+       expect(checkElem.isDisplayed()).toBe(true);
     }
+    var handicap='';
     $http.get(url)
         .then(function (data) {
-            console.log(data.data.records.length)
+           // console.log(data.data.records)
             $scope.markers1 = data.data.records;
             for (let i = 0; i < data.data.records.length; i++) {
                // console.log(data.data.records[i].fields.sasong);
                 var openMonths = data.data.records[i].fields.sasong;
                 var openTime = data.data.records[i].fields.oppettider;
-                console.log(typeof openTime);
+                handicap=data.data.records[i].fields.antal_hwc;
+               if (handicap==1){ handicap ='Yes';}else {handicap ='No';}
+             
                 if (openMonths.length == 6) {
                     var openMonths1 = openMonths.slice(0, 3);
                     var openMonths2 = openMonths.slice(3);
@@ -23,15 +32,14 @@ app.controller("ToaletterCtrl", function ($scope, $http) {
                 if (openTime.length == 4) {
                     openTime = openTime.slice(0,2)+'AM -' +openTime.slice(2)+'PM';
                     
-                    console.log(openTime);
                 }else{
                     openTime = openTime;
-                    console.log(openTime);
+                    
                 }
-toiletList.push([data.data.records[i].fields.plats,openMonths,data.data.records[i].fields.antal_dam,data.data.records[i].fields.antal_hwc,openTime,data.data.records[i].fields.avgift])
+toiletList.push([data.data.records[i].fields.plats,openMonths,data.data.records[i].fields.antal_dam,handicap,openTime,data.data.records[i].fields.avgift])
 //toiletList.push([data.data.records[i].fields.plats,openMonths]);    
 }
 $scope.markers=toiletList;
-            console.log(toiletList);
+          
         })
 });

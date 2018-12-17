@@ -17,7 +17,7 @@
     <title>Toaletter</title>
 </head>
 <body >
-    <div class="container-fluid">
+    <div class="container-fluid" id="containerHome">
         <div class="row">
             <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <nav class="main-header navbar d-flex justify-content-center">
@@ -46,22 +46,25 @@
                         <h2  id="toilets">Toilets</h2>
                         <ul class="list">
                             <li class="list__item">
-                                <input type="radio" checked class="radio-btn" name="choice" id="a-opt" ng-model="radioVal"
-                                    ng-click=disToilets('all') value="all" />
+                                <input type="radio" checked class="radio-btn" name="choice" id="a-opt" ng-model="checked"
+                                    ng-click="disToilets(all)" value="all" />
                                 <label for="a-opt" class="label">All</label>
                             </li>
                             <li class="list__item">
                                 <input type="radio" class="radio-btn" name="choice" id="b-opt" ng-model="radioVal"
-                                    ng-click=disToilets('nearname') value="nearme" />
+                                    ng-click="disToilets(nearname)" value="nearme" />
                                 <label for="b-opt" class="label">Near Me</label>
                             </li>
+                            <li class="list__item">
+                                <input type="text" ng-model="searchText" placeholder="Search" class="form-control form-control-lg">
                             </li>
+                            
                         </ul>
                         <br />
                     </form>
                 </div>
             </article>
-            <div>
+            <div class="check-element animate-show-hide" ng-show="checked">
                 <table id="displayToilet">
                     <tr>
                         <th>Place</th>
